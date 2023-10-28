@@ -15,7 +15,8 @@ Scenario: Buy one product
 Scenario: Buy multiple products
     When I buy "Bread" with quantity 2
     And I buy "Jam" with quantity 1
-    Then total should be 121.00
+    And I buy "Milk" with quantity 2
+    Then total should be 221.00
     Then "Jam" should have 8 units
     Then "Bread" should have 1 units
-
+    Then "Milk" should have  8 units
